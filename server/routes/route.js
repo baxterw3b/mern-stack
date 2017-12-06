@@ -1,8 +1,8 @@
 const express = require('express');
 const router = require('express-promise-router')();
-const CampaignsController = require('../controllers/controllers');
+const Controller = require('../controllers/controllers');
 
 router.route('/')
-    .get(CampaignsController.getAll);
+    .get(Controller.getAll);
 
 module.exports = router;
